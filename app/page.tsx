@@ -118,41 +118,44 @@ export default function Home() {
             <p className="mt-10 md:text-2xl">
               Depuis début septembre 2022, une dégradation dramatique de la
               sécurité a paralysé le pays. Des gangs criminels ont pris le
-              contrôle entier de quartiers et d’installations stratégiques
+              contrôle entier de quartiers et d&apos;installations stratégiques
               vitales, dont le port international de Port-au-Prince et le
               principal terminal pétrolier du pays (Varreux) pendant deux mois.
               Cette situation a dramatiquement impacté le quotidien de la
               population. Ces crises ont été aggravées par la résurgence en
-              octobre 2022 de l’épidémie de choléra. La coordination humanitaire
-              estimait que 48 % de la population avait besoin d’une action
-              urgente. De plus, 45 % de la population souffraient de la faim. Le
-              pays présentait l’un des niveaux d’insécurité alimentaire
-              chronique les plus élevés au monde. La situation était
-              particulièrement critique pour de nombreux déplacés internes
-              vivant dans des conditions insalubres à Port-au-Prince et les
-              rapatriés forcés, de plus en plus nombreux, en provenance de
-              différents pays, notamment de la République dominicaine.
+              octobre 2022 de l&apos;épidémie de choléra. La coordination
+              humanitaire estimait que 48 % de la population avait besoin
+              d&apos;une action urgente. De plus, 45 % de la population
+              souffraient de la faim. Le pays présentait l&apos;un des niveaux
+              d&apos;insécurité alimentaire chronique les plus élevés au monde.
+              La situation était particulièrement critique pour de nombreux
+              déplacés internes vivant dans des conditions insalubres à
+              Port-au-Prince et les rapatriés forcés, de plus en plus nombreux,
+              en provenance de différents pays, notamment de la République
+              dominicaine.
             </p>
           </div>
           <div className="bg-red-200 mx-4">
             <p className=" text-[10px] md:text-xl p-1">
-              11,84 millions d'habitants 163ème sur 191 pays pour l'Indice de
-              Développement Humain
+              11,84 millions d&apos;habitants 163ème sur 191 pays pour
+              l&apos;Indice de Développement Humain
             </p>
           </div>
         </div>
       </div>
 
-      <p className="my-10 text-3xl">MYTH: It’s a hopeless situation in Haiti</p>
+      <p className="my-10 text-3xl">
+        MYTH: It&apos;s a hopeless situation in Haiti
+      </p>
       <p className="text-xl my-6">
         FACT: Positive change is possible and happening…
       </p>
       <p>
-        In Haiti — and around the world — there’s a growing movement to support
-        child protection reform and the process of deinstitutionalizing children
-        toward family and community-based care. This year, LFBS is participating
-        in a historic, government initiative to evaluate — and take action —
-        against abusive Haitian orphanages.
+        In Haiti — and around the world — there&apos;s a growing movement to
+        support child protection reform and the process of deinstitutionalizing
+        children toward family and community-based care. This year, LFBS is
+        participating in a historic, government initiative to evaluate — and
+        take action — against abusive Haitian orphanages.
       </p>
       <p className="my-10 text-center text-4xl font-bold">Our Vision</p>
       <p className="text-center">
