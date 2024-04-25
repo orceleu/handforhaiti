@@ -45,7 +45,7 @@ export default function Home() {
             <p className="text-center text-4xl">48%</p>
             <p className="mt-5 text-center">
               {" "}
-              DE LA POPULATION A BESOIN D'UNE ACTION URGENTE
+              DE LA POPULATION A BESOIN D&apos;UNE ACTION URGENTE
             </p>
           </div>
           <div className=" my-auto">
@@ -78,33 +78,37 @@ export default function Home() {
             <p className="mt-10 text-center font-bold">anonymous donator</p>
 
             <p className="mt-10 text-center">
-              "We often forget the luck we have to be born in a country with a
-              stable situation, both socially, economically, and politically,
-              and I feel grateful just thinking about it. May God come to their
-              aid and preserve them."
+              &quot;We often forget the luck we have to be born in a country
+              with a stable situation, both socially, economically, and
+              politically, and I feel grateful just thinking about it. May God
+              come to their aid and preserve them.&quot;
             </p>
           </div>
           <div>
-            <p className="mt-10 text-center font-bold">William O'Neill (ONU)</p>
+            <p className="mt-10 text-center font-bold">
+              William O&apos;Neill (ONU)
+            </p>
 
             <p className="mt-10 text-center">
-              "The humanitarian conditions in this country are deteriorating
-              rapidly and could become like Somalia at its worst. The difference
-              in Haiti is that the state is practically absent. [...] It's
-              almost like a Hobbesian world where the strongest survive [...]
-              and unfortunately, the strongest right now are the gangs…"
+              &quot;The humanitarian conditions in this country are
+              deteriorating rapidly and could become like Somalia at its worst.
+              The difference in Haiti is that the state is practically absent.
+              [...] It&apos;s almost like a Hobbesian world where the strongest
+              survive [...] and unfortunately, the strongest right now are the
+              gangs…&quot;
             </p>
           </div>
           <div>
             <p className="mt-10 text-center font-bold">Haitian citizen</p>
 
             <p className="mt-10 text-center">
-              "I am a shopkeeper, I have 3 children. Every day, I wake up at 4
-              a.m. to go to work to feed my family. Often, they go to school
-              with just a glass of water in their stomachs. My formal education
-              ended in the beginning of high school due to my parents' financial
-              constraints, but I will do everything in my power to ensure that
-              my children complete their studies and have a better future."
+              &quot;I am a shopkeeper, I have 3 children. Every day, I wake up
+              at 4 a.m. to go to work to feed my family. Often, they go to
+              school with just a glass of water in their stomachs. My formal
+              education ended in the beginning of high school due to my
+              parents&apos; financial constraints, but I will do everything in
+              my power to ensure that my children complete their studies and
+              have a better future.&quot;
             </p>
           </div>
         </div>
