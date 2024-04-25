@@ -11,6 +11,7 @@ import Footer from "./component/Footer";
 import FollowOurProgressForm from "./component/FollowOurProgressForm";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="lg:p-10">
@@ -53,17 +54,22 @@ export default function Home() {
             <p className="mt-5 text-center">DE LA POPULATION SOUFFRE DE FAIM</p>
           </div>
           <div className="bg-blue-100 w-[300px] mx-auto ">
-            <p className="text-4xl font-bold text-center mt-10">330</p>
+            <p className="text-4xl font-bold text-center mt-10">530</p>
             <p className="mt-10 text-center">PERSONNES BÉNÉFICIAIRES</p>
-            <p className="mt-10 text-center">
+            <p className="mt-10 text-center px-3">
               Je fais une donation pour augmenter le nombre de beneficiares
             </p>
-            <div className="flex justify-center">
-              <Button variant="outline">
-                {" "}
-                <IoMdHeartEmpty className="h-5 w-5 " />
-              </Button>
-            </div>{" "}
+            <div className="flex justify-center mt-3">
+              <Link
+                href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
+                target="_blank"
+              >
+                <Button variant="destructive">
+                  <IoMdHeartEmpty className="h-5 w-5 " />
+                  Donate
+                </Button>
+              </Link>
+            </div>
             <br />
             <br />
           </div>
@@ -147,31 +153,32 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <p className="my-10 text-3xl">
-        MYTH: It&apos;s a hopeless situation in Haiti
-      </p>
-      <p className="text-xl my-6">
-        FACT: Positive change is possible and happening…
-      </p>
-      <p>
-        In Haiti — and around the world — there&apos;s a growing movement to
-        support child protection reform and the process of deinstitutionalizing
-        children toward family and community-based care. This year, LFBS is
-        participating in a historic, government initiative to evaluate — and
-        take action — against abusive Haitian orphanages.
-      </p>
-      <p className="my-10 text-center text-4xl font-bold">Our Vision</p>
-      <p className="text-center">
-        Our Vision Every child in Haiti grows up in a safe, loving and
-        self-sustaining family, supported by empowered, informed and secure
-        communities.
-      </p>
+      <div className="px-6">
+        <p className="my-10 text-3xl">
+          MYTH: It&apos;s a hopeless situation in Haiti
+        </p>
+        <p className="text-xl my-6">
+          FACT: Positive change is possible and happening…
+        </p>
+        <p>
+          In Haiti — and around the world — there&apos;s a growing movement to
+          support child protection reform and the process of
+          deinstitutionalizing children toward family and community-based care.
+          This year, LFBS is participating in a historic, government initiative
+          to evaluate — and take action — against abusive Haitian orphanages.
+        </p>
+        <p className="my-10 text-center text-4xl font-bold">Our Vision</p>
+        <p className="text-center">
+          Our Vision Every child in Haiti grows up in a safe, loving and
+          self-sustaining family, supported by empowered, informed and secure
+          communities.
+        </p>
+      </div>
       <p className="text-center text-4xl font-bold md:text-4xl my-[100px] ">
         Our program
       </p>
       <div className="flex justify-center">
-        <div className=" grid sm:grid-cols-1 md:grid-cols-3 space-x-10">
+        <div className=" grid sm:grid-cols-1 md:grid-cols-3 gap-10">
           <div className="shadow-md p-2 hover:bg-yellow-100 ">
             <p className="my-5 md:my-10 text-center font-semibold">Education</p>
             <Image src={img9} alt="" className="w-[200px] h-[200px]" />

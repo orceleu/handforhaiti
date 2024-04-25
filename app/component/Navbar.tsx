@@ -229,12 +229,17 @@ export default function NavBar() {
           </Button>
         </div>
         <div className="md:hidden flex items-center">
-          <Button variant="destructive">
-            <div className="flex items-center   ">
-              <IoMdHeartEmpty className="h-5 w-5 " />
-              donate
-            </div>
-          </Button>
+          <Link
+            href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
+            target="_blank"
+          >
+            <Button variant="destructive" asChild>
+              <div className="flex items-center   ">
+                <IoMdHeartEmpty className="h-5 w-5 " />
+                <p>Donate</p>
+              </div>
+            </Button>
+          </Link>
 
           <button
             onClick={toggleMenu}
