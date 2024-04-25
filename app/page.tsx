@@ -1,113 +1,196 @@
 import Image from "next/image";
+import haitihelp1 from "../public/childsimgdonation.jpg";
+import img8 from "../public/img8.jpg";
+import img9 from "../public/img9.jpg";
+import barbecue from "../public/barbecue.jpg";
+import { IoMdHeartEmpty } from "react-icons/io";
 
+import img11 from "../public/img11.jpg";
+import NavBar from "./component/Navbar";
+import Footer from "./component/Footer";
+import FollowOurProgressForm from "./component/FollowOurProgressForm";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <main className="lg:p-10">
+      <NavBar />
+      <div className="bg-yellow-100  p-5">
+        <br />
+        <br />
+        <br />
+        <br />
+        <p className="text-center font-extralight text-2xl md:text-4xl ">
+          Our Long-Term Response Plan to Support Economic, Social, and
+          Humanitarian Relief in Haiti
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <div className=" flex items-center sm:mt-10">
+          <div className=" border-2 lg:border-4 border-gray-700 mx-auto mt-10 h-[65px] w-[185px]">
+            <button className=" h-[60px] w-[180px] mx-auto my-auto hover:bg-blue-200 bg-transparent  font-bold text-black">
+              learn more
+            </button>
+          </div>
+        </div>
+        <p className="text-center text-sm my-5 underline">
+          Humanitarism is the school of the highest justice,where charity
+          prevails over the laws of men.
+        </p>
+        <br />
+      </div>
+
+      <Image src={haitihelp1} alt="" />
+      <div className="mx-7  mt-[100px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className=" my-auto">
+            <p className="text-center text-4xl">48%</p>
+            <p className="mt-5 text-center">
+              {" "}
+              DE LA POPULATION A BESOIN D'UNE ACTION URGENTE
+            </p>
+          </div>
+          <div className=" my-auto">
+            <p className="text-center text-4xl">45%</p>
+            <p className="mt-5 text-center">DE LA POPULATION SOUFFRE DE FAIM</p>
+          </div>
+          <div className="bg-blue-100 w-[300px] mx-auto ">
+            <p className="text-4xl font-bold text-center mt-10">330</p>
+            <p className="mt-10 text-center">PERSONNES BÉNÉFICIAIRES</p>
+            <p className="mt-10 text-center">
+              Je fais une donation pour augmenter le nombre de beneficiares
+            </p>
+            <div className="flex justify-center">
+              <Button variant="outline">
+                {" "}
+                <IoMdHeartEmpty className="h-5 w-5 " />
+              </Button>
+            </div>{" "}
+            <br />
+            <br />
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <Separator />
+
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 space-x-4 my-10">
+          <div>
+            <p className="mt-10 text-center font-bold">anonymous donator</p>
+
+            <p className="mt-10 text-center">
+              "We often forget the luck we have to be born in a country with a
+              stable situation, both socially, economically, and politically,
+              and I feel grateful just thinking about it. May God come to their
+              aid and preserve them."
+            </p>
+          </div>
+          <div>
+            <p className="mt-10 text-center font-bold">William O'Neill (ONU)</p>
+
+            <p className="mt-10 text-center">
+              "The humanitarian conditions in this country are deteriorating
+              rapidly and could become like Somalia at its worst. The difference
+              in Haiti is that the state is practically absent. [...] It's
+              almost like a Hobbesian world where the strongest survive [...]
+              and unfortunately, the strongest right now are the gangs…"
+            </p>
+          </div>
+          <div>
+            <p className="mt-10 text-center font-bold">Haitian citizen</p>
+
+            <p className="mt-10 text-center">
+              "I am a shopkeeper, I have 3 children. Every day, I wake up at 4
+              a.m. to go to work to feed my family. Often, they go to school
+              with just a glass of water in their stomachs. My formal education
+              ended in the beginning of high school due to my parents' financial
+              constraints, but I will do everything in my power to ensure that
+              my children complete their studies and have a better future."
+            </p>
+          </div>
+        </div>
+        <Separator />
+        <div className="flex items-center">
+          <div>
+            <p className="text-center font-bold text-4xl my-[100px]">
+              CONTEXTE
+            </p>
+            <Image src={barbecue} alt="barbecue ,alias Jimmy Cherizier" />
+            <p className="mt-10 md:text-2xl">
+              Depuis début septembre 2022, une dégradation dramatique de la
+              sécurité a paralysé le pays. Des gangs criminels ont pris le
+              contrôle entier de quartiers et d’installations stratégiques
+              vitales, dont le port international de Port-au-Prince et le
+              principal terminal pétrolier du pays (Varreux) pendant deux mois.
+              Cette situation a dramatiquement impacté le quotidien de la
+              population. Ces crises ont été aggravées par la résurgence en
+              octobre 2022 de l’épidémie de choléra. La coordination humanitaire
+              estimait que 48 % de la population avait besoin d’une action
+              urgente. De plus, 45 % de la population souffraient de la faim. Le
+              pays présentait l’un des niveaux d’insécurité alimentaire
+              chronique les plus élevés au monde. La situation était
+              particulièrement critique pour de nombreux déplacés internes
+              vivant dans des conditions insalubres à Port-au-Prince et les
+              rapatriés forcés, de plus en plus nombreux, en provenance de
+              différents pays, notamment de la République dominicaine.
+            </p>
+          </div>
+          <div className="bg-red-200 mx-4">
+            <p className=" text-[10px] md:text-xl p-1">
+              11,84 millions d'habitants 163ème sur 191 pays pour l'Indice de
+              Développement Humain
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <p className="my-10 text-3xl">MYTH: It’s a hopeless situation in Haiti</p>
+      <p className="text-xl my-6">
+        FACT: Positive change is possible and happening…
+      </p>
+      <p>
+        In Haiti — and around the world — there’s a growing movement to support
+        child protection reform and the process of deinstitutionalizing children
+        toward family and community-based care. This year, LFBS is participating
+        in a historic, government initiative to evaluate — and take action —
+        against abusive Haitian orphanages.
+      </p>
+      <p className="my-10 text-center text-4xl font-bold">Our Vision</p>
+      <p className="text-center">
+        Our Vision Every child in Haiti grows up in a safe, loving and
+        self-sustaining family, supported by empowered, informed and secure
+        communities.
+      </p>
+      <p className="text-center text-4xl font-bold md:text-4xl my-[100px] ">
+        Our program
+      </p>
+      <div className="flex justify-center">
+        <div className=" grid sm:grid-cols-1 md:grid-cols-3 space-x-10">
+          <div className="shadow-md p-2 hover:bg-yellow-100 ">
+            <p className="my-5 md:my-10 text-center font-semibold">Education</p>
+            <Image src={img9} alt="" className="w-[200px] h-[200px]" />
+          </div>
+          <div className="shadow-md p-2 hover:bg-yellow-100 ">
+            <p className="my-5 md:my-10 text-center font-semibold">
+              Social program
+            </p>
+            <Image src={img11} alt="" className="w-[200px] h-[200px]" />
+          </div>
+
+          <div className="shadow-md p-2 hover:bg-yellow-100 ">
+            <p className="my-5 md:my-10 text-center font-semibold">
+              Mental health
+            </p>
+            <Image src={img8} alt="" className="w-[200px] h-[200px]" />
+          </div>
+        </div>
       </div>
+      <div className="h-1 bg-gray-700 my-16"></div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="my-[100px]">
+        <FollowOurProgressForm />
       </div>
+      <div className="h-3 bg-gray-700 my-16"></div>
+      <Footer />
     </main>
   );
 }
