@@ -1,11 +1,16 @@
 import Image from "next/image";
 import haitihelp1 from "../public/childsimgdonation.jpg";
-import img8 from "../public/img8.jpg";
+import img8 from "../public/img88.jpg";
 import img9 from "../public/img9.jpg";
+import duri from "../public/durizpired2.jpg";
+import groupchildren from "../public/groupchildrend2.jpg";
 import barbecue from "../public/barbecue.jpg";
 import { IoMdHeartEmpty } from "react-icons/io";
-
+import Head from "next/head";
 import img11 from "../public/img11.jpg";
+import logohkot from "../public/Logohkot1.png";
+import logopihighservice from "../public/pihighservice.png";
+
 import NavBar from "./component/Navbar";
 import Footer from "./component/Footer";
 import FollowOurProgressForm from "./component/FollowOurProgressForm";
@@ -15,6 +20,14 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="lg:p-10">
+      <Head>
+        <title>Hand for Haiti</title>
+        <meta
+          name="description"
+          content=" Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          key="desc"
+        />
+      </Head>
       <NavBar />
       <div className="bg-yellow-100  p-5">
         <br />
@@ -25,14 +38,17 @@ export default function Home() {
           Our Long-Term Response Plan to Support Economic, Social, and
           Humanitarian Relief in Haiti
         </p>
-        <div className=" flex items-center sm:mt-10">
-          <div className=" border-2 lg:border-4 border-gray-700 mx-auto mt-10 h-[65px] w-[185px]">
-            <button className=" h-[60px] w-[180px] mx-auto my-auto hover:bg-blue-200 bg-transparent  font-bold text-black">
-              learn more
-            </button>
+        <a href="/learnmore">
+          <div className=" flex items-center sm:mt-10">
+            <div className=" border-2 lg:border-4 border-gray-700 mx-auto mt-10 h-[65px] w-[185px]">
+              <button className=" h-[60px] w-[180px] mx-auto my-auto hover:bg-blue-200 bg-transparent  font-bold text-black">
+                learn more
+              </button>
+            </div>
           </div>
-        </div>
-        <p className="text-center text-sm my-5 underline">
+        </a>
+
+        <p className="text-center text-[10px] md:text-sm  my-5 underline">
           Humanitarism is the school of the highest justice,where charity
           prevails over the laws of men.
         </p>
@@ -74,6 +90,30 @@ export default function Home() {
             <br />
           </div>
         </div>
+        <div className="mt-[50px] mx-auto">
+          <div className="flex justify-center">
+            <p className="text-center font-semibold">Our main sponsors</p>
+          </div>
+          <div className="flex justify-center">
+            <div className="flex items-center space-x-3">
+              <div>
+                <Image
+                  src={logohkot}
+                  alt="haitianknowledgeoftech"
+                  className="size-10 md:size-[100px]"
+                />
+                <p className="text-[6px] md:text-[12px] text-center text-gray-300">
+                  haitianknowledgeoftech.tech
+                </p>
+              </div>
+              <Image
+                src={logopihighservice}
+                alt="pihighservice"
+                className="size-10 md:size-[100px]"
+              />
+            </div>
+          </div>
+        </div>
         <br />
         <br />
         <br />
@@ -81,7 +121,7 @@ export default function Home() {
 
         <div className="grid sm:grid-cols-1 md:grid-cols-3 space-x-4 my-10">
           <div>
-            <p className="mt-10 text-center font-bold">anonymous donator</p>
+            <p className="mt-10 text-center font-bold">Anonymous donator</p>
 
             <p className="mt-10 text-center">
               &quot;We often forget the luck we have to be born in a country
@@ -181,19 +221,15 @@ export default function Home() {
         <div className=" grid sm:grid-cols-1 md:grid-cols-3 gap-10">
           <div className="shadow-md p-2 hover:bg-yellow-100 ">
             <p className="my-5 md:my-10 text-center font-semibold">Education</p>
-            <Image src={img9} alt="" className="w-[200px] h-[200px]" />
+            <Image src={groupchildren} alt="" className="w-[200px] h-[200px]" />
           </div>
           <div className="shadow-md p-2 hover:bg-yellow-100 ">
-            <p className="my-5 md:my-10 text-center font-semibold">
-              Social program
-            </p>
-            <Image src={img11} alt="" className="w-[200px] h-[200px]" />
+            <p className="my-5 md:my-10 text-center font-semibold">Food</p>
+            <Image src={duri} alt="" className="w-[200px] h-[200px]" />
           </div>
 
           <div className="shadow-md p-2 hover:bg-yellow-100 ">
-            <p className="my-5 md:my-10 text-center font-semibold">
-              Mental health
-            </p>
+            <p className="my-5 md:my-10 text-center font-semibold">Health</p>
             <Image src={img8} alt="" className="w-[200px] h-[200px]" />
           </div>
         </div>

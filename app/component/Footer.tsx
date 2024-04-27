@@ -81,6 +81,7 @@ export default function Footer() {
   return (
     <>
       <button onClick={notify}>Notify!</button>
+
       <ToastContainer />
       <div className="container mx-auto px-4 my-10">
         <div className="flex justify-center my-5">

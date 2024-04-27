@@ -44,13 +44,13 @@ export default function NavBar() {
             height={60}
             src={sante1}
             alt=""
-            className="w-[60px] h-[60px] rounded-[60px] mx-2 my-auto "
+            className=" mx-2 my-auto "
           />
           <p className="font-bold text-[14px] md:text-2xl ">Handforhaiti</p>
         </div>
         <div className="hidden md:flex items-center space-x-6">
           <Link href="/">
-            <p className=" hover:text-emerald-700 font-semibold ">Home</p>
+            <p className=" hover:text-yellow-700 font-semibold ">Home</p>
           </Link>
 
           <div
@@ -65,7 +65,7 @@ export default function NavBar() {
             }
           >
             <div className="flex items-center">
-              <p className=" hover:text-emerald-700 font-semibold mx-1">
+              <p className=" hover:text-yellow-700 font-semibold mx-1">
                 Our work
               </p>
               <BsChevronDown className="mt-1" />
@@ -126,7 +126,7 @@ export default function NavBar() {
             }
           >
             <div className="flex items-center">
-              <p className=" hover:text-emerald-700 font-semibold mx-1">
+              <p className=" hover:text-yellow-700 font-semibold mx-1">
                 About us
               </p>
               <BsChevronDown className="mt-1" />
@@ -179,7 +179,7 @@ export default function NavBar() {
             }
           >
             <div className="flex items-center">
-              <p className="text-emerald-700 underline font-semibold mx-1">
+              <p className="text-yellow-700 underline font-semibold mx-1">
                 Get involved
               </p>
               <BsChevronDown className="mt-1" />
@@ -235,7 +235,6 @@ export default function NavBar() {
           >
             <Button variant="destructive" asChild>
               <div className="flex items-center   ">
-                <IoMdHeartEmpty className="h-5 w-5 " />
                 <p>Donate</p>
               </div>
             </Button>
@@ -243,7 +242,7 @@ export default function NavBar() {
 
           <button
             onClick={toggleMenu}
-            className="text-black mx-3 hover:text-emerald-700"
+            className="text-black mx-3 hover:text-yellow-700"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +264,7 @@ export default function NavBar() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden bg-white py-2 ">
-          <a href="/" className="block px-10 py-2 hover:text-emerald-700">
+          <a href="/" className="block px-10 py-2 hover:text-yellow-700">
             Home
           </a>
           <Separator />
@@ -282,7 +281,7 @@ export default function NavBar() {
             }
           >
             <div className="flex items-center">
-              <p className="text-emerald-700 underline font-semibold mx-1">
+              <p className="text-yellow-700 underline font-semibold mx-1">
                 Get involved
               </p>
               <BsChevronDown className="mt-1" />
@@ -325,18 +324,18 @@ export default function NavBar() {
           </div>
 
           <Link href="/pages/contactUs">
-            <p className="block px-10 py-2 hover:text-emerald-700">Our work</p>
+            <p className="block px-10 py-2 hover:text-yellow-700">Our work</p>
           </Link>
           <Separator />
 
           <Link href="#">
-            <p className="block px-10 py-2 hover:text-emerald-700">About</p>
+            <p className="block px-10 py-2 hover:text-yellow-700">About</p>
           </Link>
           <Separator />
 
           <Link href="/pages/joinUs">
             {" "}
-            <p className="text-emerald-700 ml-5 underline hover:text-emerald-800 ">
+            <p className="text-yellow-700 ml-5 underline hover:text-yellow-800 ">
               Get involved
             </p>
           </Link>
