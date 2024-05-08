@@ -84,7 +84,7 @@ export default function NavBar() {
                     className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
                     onClick={() => {
                       setIsHovered(false);
-                      router.push("/ourWork/education");
+                      router.push("/ourprogram/education");
                     }}
                   >
                     Education
@@ -94,20 +94,20 @@ export default function NavBar() {
                     className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
                     onClick={() => {
                       setIsHovered(false);
-                      router.push("/ourWork/health");
+                      router.push("/ourprogram/health");
                     }}
                   >
-                    Mental HealthCare
+                    Health
                   </li>
                   <Separator />
                   <li
                     className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
                     onClick={() => {
                       setIsHovered(false);
-                      router.push("/ourWork/social");
+                      router.push("/ourprogram/food");
                     }}
                   >
-                    Social program
+                    Food
                   </li>
                 </ul>
               </div>
@@ -194,12 +194,16 @@ export default function NavBar() {
                 }}
               >
                 <ul>
-                  <li
-                    className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => setIsHovered2(false)}
-                  >
-                    Get update
-                  </li>
+                  <a href="#getupdate">
+                    {" "}
+                    <li
+                      className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
+                      onClick={() => setIsHovered2(false)}
+                    >
+                      Get update
+                    </li>
+                  </a>
+
                   <Separator />
                   <li
                     className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
@@ -221,12 +225,17 @@ export default function NavBar() {
               </div>
             )}
           </div>
-          <Button variant="destructive">
-            <div className="flex items-center mx-4  ">
-              <IoMdHeartEmpty className="h-5 w-5 " />
-              donate
-            </div>
-          </Button>
+          <Link
+            href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
+            target="_blank"
+          >
+            <Button variant="destructive">
+              <div className="flex items-center mx-4  ">
+                <IoMdHeartEmpty className="h-5 w-5 " />
+                donate
+              </div>
+            </Button>
+          </Link>
         </div>
         <div className="md:hidden flex items-center">
           <Link

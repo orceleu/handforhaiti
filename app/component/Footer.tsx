@@ -80,34 +80,32 @@ export default function Footer() {
 
   return (
     <>
-      <button onClick={notify}>Notify!</button>
-
       <ToastContainer />
       <div className="container mx-auto px-4 my-10">
         <div className="flex justify-center my-5">
-          <Button variant="destructive" size="lg">
-            <div className="flex items-center md:mx-4  ">
-              <IoMdHeartEmpty className="h-5 w-5 " />
-              donate
-            </div>
-          </Button>
+          <Link
+            href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
+            target="_blank"
+          >
+            <Button variant="destructive" size="lg" asChild>
+              <div className="flex items-center   ">
+                <IoMdHeartEmpty className="h-5 w-5 " />
+
+                <p>Donate</p>
+              </div>
+            </Button>
+          </Link>
         </div>
         <footer className="flex flex-col lg:flex-row justify-between items-center">
-          <p className="text-sm lg:order-2 md:max-w-[300px]">
-            &copy; Hope for Haiti’s mission is to improve the lives of the
-            Haitian people, particularly women and children. Please mail any
-            check gifts to: Dept. #0286, P.O. Box 413026, Naples, FL 34101 Main
-            Address: 1021 5th Ave N., Naples, FL 34102 Phone Number: (239)
-            434-7183 © Hope for Haiti 2021 | Donor Privacy Policy
+          <p className="text-sm text-gray-500 lg:order-2 md:max-w-[300px]">
+            &copy; Hand for Haiti is a 501c3 non-profit charity, with federal
+            EIN number 26-0498705 . © Hand for Haiti 2021 | Donor Privacy Policy
           </p>
           <div className="flex lg:order-1 lg:justify-center lg:mt-0 mt-4">
             <Link href="/pages/signup" className="text-sm hover:text-gray-400">
               Home
             </Link>
-            <Link
-              href="/pages/login"
-              className="text-sm hover:text-gray-400 ml-4"
-            >
+            <Link href="/" className="text-sm hover:text-gray-400 ml-4">
               About
             </Link>
             <Link href="#" className="text-sm hover:text-gray-400 ml-4">
@@ -119,7 +117,10 @@ export default function Footer() {
       <div className="my-16">
         <div className="flex justify-center items-center mt-5">
           <div className="flex">
-            <Link href="https://www.facebook.com" target="_blank">
+            <Link
+              href="https://www.facebook.com/profile.php?id=100085541012699"
+              target="_blank"
+            >
               <FaFacebook className="w-10 h-10" />
             </Link>
             <Link href="https://www.instagram.com" target="_blank">

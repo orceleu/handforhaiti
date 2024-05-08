@@ -17,6 +17,7 @@ import FollowOurProgressForm from "./component/FollowOurProgressForm";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import HaitianStory from "./component/HaitianStory";
 export default function Home() {
   return (
     <main className="lg:p-10">
@@ -61,19 +62,21 @@ export default function Home() {
           <div className=" my-auto">
             <p className="text-center text-4xl">48%</p>
             <p className="mt-5 text-center">
-              {" "}
-              DE LA POPULATION A BESOIN D&apos;UNE ACTION URGENTE
+              OF THE POPULATION NEEDS URGENT ACTION.
             </p>
           </div>
           <div className=" my-auto">
             <p className="text-center text-4xl">45%</p>
-            <p className="mt-5 text-center">DE LA POPULATION SOUFFRE DE FAIM</p>
+            <p className="mt-5 text-center">
+              {" "}
+              OF THE POPULATION IS SUFFERING FROM HUNGER.
+            </p>
           </div>
           <div className="bg-blue-100 w-[300px] mx-auto ">
-            <p className="text-4xl font-bold text-center mt-10">530</p>
-            <p className="mt-10 text-center">PERSONNES BÉNÉFICIAIRES</p>
+            <p className="text-4xl font-bold text-center mt-10">1030</p>
+            <p className="mt-10 text-center">BENEFICIARIES</p>
             <p className="mt-10 text-center px-3">
-              Je fais une donation pour augmenter le nombre de beneficiares
+              I'm making a donation to increase the number of beneficiaries.
             </p>
             <div className="flex justify-center mt-3">
               <Link
@@ -147,48 +150,36 @@ export default function Home() {
           <div>
             <p className="mt-10 text-center font-bold">Haitian citizen</p>
 
-            <p className="mt-10 text-center">
-              &quot;I am a shopkeeper, I have 3 children. Every day, I wake up
-              at 4 a.m. to go to work to feed my family. Often, they go to
-              school with just a glass of water in their stomachs. My formal
-              education ended in the beginning of high school due to my
-              parents&apos; financial constraints, but I will do everything in
-              my power to ensure that my children complete their studies and
-              have a better future.&quot;
-            </p>
+            <HaitianStory />
           </div>
         </div>
         <Separator />
         <div className="flex items-center">
           <div>
-            <p className="text-center font-bold text-4xl my-[100px]">
-              CONTEXTE
-            </p>
+            <p className="text-center font-bold text-4xl my-[100px]">CONTEXT</p>
             <Image src={barbecue} alt="barbecue ,alias Jimmy Cherizier" />
             <p className="mt-10 md:text-2xl">
-              Depuis début septembre 2022, une dégradation dramatique de la
-              sécurité a paralysé le pays. Des gangs criminels ont pris le
-              contrôle entier de quartiers et d&apos;installations stratégiques
-              vitales, dont le port international de Port-au-Prince et le
-              principal terminal pétrolier du pays (Varreux) pendant deux mois.
-              Cette situation a dramatiquement impacté le quotidien de la
-              population. Ces crises ont été aggravées par la résurgence en
-              octobre 2022 de l&apos;épidémie de choléra. La coordination
-              humanitaire estimait que 48 % de la population avait besoin
-              d&apos;une action urgente. De plus, 45 % de la population
-              souffraient de la faim. Le pays présentait l&apos;un des niveaux
-              d&apos;insécurité alimentaire chronique les plus élevés au monde.
-              La situation était particulièrement critique pour de nombreux
-              déplacés internes vivant dans des conditions insalubres à
-              Port-au-Prince et les rapatriés forcés, de plus en plus nombreux,
-              en provenance de différents pays, notamment de la République
-              dominicaine.
+              Since early September 2022, a dramatic deterioration in security
+              has paralyzed the country. Criminal gangs have taken complete
+              control of neighborhoods and vital strategic facilities, including
+              the international port of Port-au-Prince and the country's main
+              oil terminal (Varreux) for two months. This situation has
+              dramatically impacted the daily lives of the population. These
+              crises were exacerbated by the resurgence of the cholera epidemic
+              in October 2022. Humanitarian coordination estimated that 48% of
+              the population needed urgent action. Additionally, 45% of the
+              population suffered from hunger. The country had one of the
+              highest levels of chronic food insecurity in the world. The
+              situation was particularly critical for many internally displaced
+              persons living in unsanitary conditions in Port-au-Prince and for
+              the increasing number of forced returnees from various countries,
+              including the Dominican Republic.
             </p>
           </div>
           <div className="bg-red-200 mx-4">
             <p className=" text-[10px] md:text-xl p-1">
-              11,84 millions d&apos;habitants 163ème sur 191 pays pour
-              l&apos;Indice de Développement Humain
+              11.84 million inhabitants, ranked 163rd out of 191 countries for
+              the Human Development Index.
             </p>
           </div>
         </div>
@@ -219,19 +210,30 @@ export default function Home() {
       </p>
       <div className="flex justify-center">
         <div className=" grid sm:grid-cols-1 md:grid-cols-3 gap-10">
-          <div className="shadow-md p-2 hover:bg-yellow-100 ">
-            <p className="my-5 md:my-10 text-center font-semibold">Education</p>
-            <Image src={groupchildren} alt="" className="w-[200px] h-[200px]" />
-          </div>
-          <div className="shadow-md p-2 hover:bg-yellow-100 ">
-            <p className="my-5 md:my-10 text-center font-semibold">Food</p>
-            <Image src={duri} alt="" className="w-[200px] h-[200px]" />
-          </div>
-
-          <div className="shadow-md p-2 hover:bg-yellow-100 ">
-            <p className="my-5 md:my-10 text-center font-semibold">Health</p>
-            <Image src={img8} alt="" className="w-[200px] h-[200px]" />
-          </div>
+          <a href="/ourprogram/education">
+            <div className="shadow-md p-2 hover:bg-yellow-100 ">
+              <p className="my-5 md:my-10 text-center font-semibold">
+                Education
+              </p>
+              <Image
+                src={groupchildren}
+                alt=""
+                className="w-[200px] h-[200px]"
+              />
+            </div>
+          </a>
+          <a href="/ourprogram/food">
+            <div className="shadow-md p-2 hover:bg-yellow-100 ">
+              <p className="my-5 md:my-10 text-center font-semibold">Food</p>
+              <Image src={duri} alt="" className="w-[200px] h-[200px]" />
+            </div>
+          </a>
+          <a href="/ourprogram/health">
+            <div className="shadow-md p-2 hover:bg-yellow-100 ">
+              <p className="my-5 md:my-10 text-center font-semibold">Health</p>
+              <Image src={img8} alt="" className="w-[200px] h-[200px]" />
+            </div>
+          </a>
         </div>
       </div>
       <div className="h-1 bg-gray-700 my-16"></div>

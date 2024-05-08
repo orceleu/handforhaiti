@@ -31,7 +31,9 @@ export default function FollowOurProgressForm() {
   return (
     <>
       <div className="max-w-md mx-auto px-6">
-        <h2 className="text-2xl font-bold mb-4">Follow our progress</h2>
+        <h2 id="getupdate" className="text-2xl font-bold mb-4">
+          Follow our progress
+        </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="firstName" className="block mb-1">
