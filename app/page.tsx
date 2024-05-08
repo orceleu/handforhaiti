@@ -76,7 +76,8 @@ export default function Home() {
             <p className="text-4xl font-bold text-center mt-10">1030</p>
             <p className="mt-10 text-center">BENEFICIARIES</p>
             <p className="mt-10 text-center px-3">
-              I'm making a donation to increase the number of beneficiaries.
+              I&apos;m making a donation to increase the number of
+              beneficiaries.
             </p>
             <div className="flex justify-center mt-3">
               <Link
@@ -162,8 +163,8 @@ export default function Home() {
               Since early September 2022, a dramatic deterioration in security
               has paralyzed the country. Criminal gangs have taken complete
               control of neighborhoods and vital strategic facilities, including
-              the international port of Port-au-Prince and the country's main
-              oil terminal (Varreux) for two months. This situation has
+              the international port of Port-au-Prince and the country&apos;s
+              main oil terminal (Varreux) for two months. This situation has
               dramatically impacted the daily lives of the population. These
               crises were exacerbated by the resurgence of the cholera epidemic
               in October 2022. Humanitarian coordination estimated that 48% of

@@ -57,8 +57,8 @@ export default function page() {
             for their children, even if they can manage the (small) school fees.
             Each school has its own uniform, usually very beautiful, which the
             children proudly wear because it gives them the chance for a better
-            future. Your child's school uniform is a wonderful gift and brings
-            happiness to an entire family.
+            future. Your child&apos;s school uniform is a wonderful gift and
+            brings happiness to an entire family.
           </p>
         </div>
         <p>Donate a uniform for $25.</p>
@@ -70,10 +70,10 @@ export default function page() {
           <Image src={img1} alt="" className="size-[100px]" />
           <p className="my-10 mx-2">
             Books, pens, and notebooks are simply part of it. You can provide a
-            child with the 'Annual Material Package.' Our educational work
-            requires a lot of very high-quality materials. Your donation for
-            educational materials forms an important foundation for the future
-            of our children.
+            child with the &apos;Annual Material Package.&apos; Our educational
+            work requires a lot of very high-quality materials. Your donation
+            for educational materials forms an important foundation for the
+            future of our children.
           </p>
         </div>
         <p>Make a donation of educational materials for $30.</p>
@@ -133,7 +133,7 @@ export default function page() {
               <li>
                 .For the elderly, education and prevention In a country where
                 the poor lack access to medical care, your medical kit is
-                essential for survival."
+                essential for survival.
               </li>
             </ul>
           </div>
