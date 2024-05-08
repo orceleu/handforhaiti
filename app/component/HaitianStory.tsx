@@ -27,17 +27,19 @@ export default function HaitianStory() {
       ) : (
         <>
           <p>
-            {" "}
-            &quot;I am a shopkeeper, I have 3 children. Every day, I wake up at
-            4 a.m. to go to work to feed my family. Often, they go to school
-            future.&quot;
+            &quot;mwen se yon komèsan,mwen gen 3 timoun ,chak jou mwen leve a 4
+            h di maten poum al chache lavi pou m bay pitit mwen yo manje. anpil
+            fwa yo konn al lekòl jis ak yon vè dlo nan vant .edid klasik mwen
+            kanpe nan segondè akòz paranm pat gen ase moyen ekonomik ,men map fè
+            tout efò m pou piti mwen yo fini etid klasik yo epi al nan inivèsite
+            pou yo ka gen yon avni miyò .&quot;
           </p>
         </>
       )}
       <div className="flex items-center mt-5">
-        <p onClick={translante} className="text-center  underline mx-1">
+        <button onClick={translante} className="text-center  underline mx-1">
           translante
-        </p>
+        </button>
         <BiWorld />
       </div>
     </>

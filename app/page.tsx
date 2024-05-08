@@ -73,7 +73,7 @@ export default function Home() {
             </p>
           </div>
           <div className="bg-blue-100 w-[300px] mx-auto ">
-            <p className="text-4xl font-bold text-center mt-10">1030</p>
+            <p className="text-4xl font-bold text-center mt-10">1100+</p>
             <p className="mt-10 text-center">BENEFICIARIES</p>
             <p className="mt-10 text-center px-3">
               I&apos;m making a donation to increase the number of
@@ -123,7 +123,7 @@ export default function Home() {
         <br />
         <Separator />
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-3 space-x-4 my-10">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <p className="mt-10 text-center font-bold">Anonymous donator</p>
 
@@ -138,7 +138,6 @@ export default function Home() {
             <p className="mt-10 text-center font-bold">
               William O&apos;Neill (ONU)
             </p>
-
             <p className="mt-10 text-center">
               &quot;The humanitarian conditions in this country are
               deteriorating rapidly and could become like Somalia at its worst.
@@ -152,6 +151,7 @@ export default function Home() {
             <p className="mt-10 text-center font-bold">Haitian citizen</p>
 
             <HaitianStory />
+            <br />
           </div>
         </div>
         <Separator />
@@ -206,7 +206,10 @@ export default function Home() {
           communities.
         </p>
       </div>
-      <p className="text-center text-4xl font-bold md:text-4xl my-[100px] ">
+      <p
+        className="text-center text-4xl font-bold md:text-4xl my-[100px] "
+        id="ourwork"
+      >
         Our program
       </p>
       <div className="flex justify-center">

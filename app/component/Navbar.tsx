@@ -288,65 +288,49 @@ export default function NavBar() {
                 }
               }, 90)
             }
-          >
-            <div className="flex items-center">
-              <p className="text-yellow-700 underline font-semibold mx-1">
-                Get involved
-              </p>
-              <BsChevronDown className="mt-1" />
-            </div>
-            {isHovered2 && (
-              <div
-                className="absolute z-10 -ml-4 mt-2 px-2 w-48 bg-white shadow-lg rounded"
-                onMouseEnter={() => setIsHoveredpopup2(true)}
-                onMouseLeave={() => {
-                  setIsHoveredpopup2(false);
-                  setIsHovered2(false);
-                }}
-              >
-                <ul>
-                  <li
-                    className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => setIsHovered2(false)}
-                  >
-                    Get update
-                  </li>
-                  <li
-                    className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => setIsHovered2(false)}
-                  >
-                    Contact us
-                  </li>
+          ></div>
 
-                  <li
-                    className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => {
-                      setIsHovered2(false);
-                      router.push("/blog");
-                    }}
-                  >
-                    Blog
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
-
-          <Link href="/pages/contactUs">
-            <p className="block px-10 py-2 hover:text-yellow-700">Our work</p>
+          <p className="block px-10 py-2 hover:text-yellow-700 font-semibold">
+            Our program
+          </p>
+          <Link href="/ourprogram/education">
+            <p className="px-10">Education</p>{" "}
+          </Link>
+          <Link href="/ourprogram/food">
+            <p className="px-10">Food</p>{" "}
+          </Link>
+          <Link href="/ourprogram/health">
+            <p className="px-10">Health</p>{" "}
           </Link>
           <Separator />
 
-          <Link href="#">
-            <p className="block px-10 py-2 hover:text-yellow-700">About</p>
+          <p className="block px-10 py-2 hover:text-yellow-700 font-semibold">
+            About
+          </p>
+
+          <Link href="/">
+            <p className="px-10">Our team</p>{" "}
+          </Link>
+          <Link href="/">
+            <p className="px-10">Who we are</p>{" "}
+          </Link>
+          <Link href="/">
+            <p className="px-10">Document</p>{" "}
           </Link>
           <Separator />
 
-          <Link href="/pages/joinUs">
-            {" "}
-            <p className="text-yellow-700 ml-5 underline hover:text-yellow-800 ">
-              Get involved
-            </p>
+          <p className="text-yellow-700 px-10 py-2 hover:text-yellow-800 font-semibold ">
+            Get involved
+          </p>
+
+          <Link href="/">
+            <p className="px-10 ">Get update</p>{" "}
+          </Link>
+          <Link href="/">
+            <p className="px-10">Contact us</p>{" "}
+          </Link>
+          <Link href="/">
+            <p className="px-10">Blog</p>{" "}
           </Link>
         </div>
       )}

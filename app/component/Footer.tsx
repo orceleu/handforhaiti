@@ -102,17 +102,20 @@ export default function Footer() {
             EIN number 26-0498705 . © Hand for Haiti 2021 | Donor Privacy Policy
           </p>
           <div className="flex lg:order-1 lg:justify-center lg:mt-0 mt-4">
-            <Link href="/pages/signup" className="text-sm hover:text-gray-400">
+            <Link href="/" className="text-sm hover:text-yellow-700 ">
               Home
             </Link>
-            <Link href="/" className="text-sm hover:text-gray-400 ml-4">
-              About
+            <Link href="/" className="text-sm hover:text-yellow-700  ml-4">
+              Contact us
             </Link>
-            <Link href="#" className="text-sm hover:text-gray-400 ml-4">
+            <Link
+              href="#ourwork"
+              className="text-sm hover:text-yellow-700  ml-4"
+            >
               Our work
             </Link>
           </div>
-        </footer>{" "}
+        </footer>
       </div>
       <div className="my-16">
         <div className="flex justify-center items-center mt-5">
