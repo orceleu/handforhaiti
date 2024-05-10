@@ -11,7 +11,7 @@ export type FormData = {
   email: string;
   message: string;
 };
-export default function page() {
+export default function Page() {
   const { register, handleSubmit, reset } = useForm<FormData>();
 
   function onSubmit(data: FormData) {

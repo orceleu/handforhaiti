@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import NavBar from "../component/Navbar";
 import { Button } from "@/components/ui/button";
 
-export default function page() {
+export default function Page() {
   const [value, setvalue] = useState("");
   const [error, seterror] = useState(false);
   const [isempty, setempty] = useState(false);
