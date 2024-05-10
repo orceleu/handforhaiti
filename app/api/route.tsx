@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
     },
   });
   const mailOptions: Mail.Options = {
-    from: "handforhaiti7@gmail.com",
+    from: email,
     to: "handforhaiti7@gmail.com",
     //cc: email, //(uncomment this line if you want to send a copy to the sender)
     subject: `Message from ${name} (${email})`,
@@ -32,14 +32,12 @@ export async function POST(request: NextRequest) {
   };
 
   const sendMailPromise = async () =>
-    await new Promise<string>((resolve, reject) => {
-      transport.sendMail(mailOptions, function (err) {
-        if (!err) {
-          resolve("Thanks for submitting");
-        } else {
-          reject(err.message);
-        }
-      });
+    await transport.sendMail(mailOptions, function (err) {
+      if (!err) {
+        console.log("Thanks for submitting");
+      } else {
+        console.log(err.message);
+      }
     });
 
   try {
