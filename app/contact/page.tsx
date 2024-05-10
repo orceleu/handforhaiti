@@ -16,7 +16,9 @@ export default function Page() {
 
   function onSubmit(data: FormData) {
     sendEmail(data);
-    reset();
+    setTimeout(() => {
+      reset();
+    }, 5000);
   }
 
   return (
