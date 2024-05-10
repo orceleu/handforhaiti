@@ -152,7 +152,7 @@ export default function NavBar() {
                     className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
                     onClick={() => setIsHovered1(false)}
                   >
-                    Who we are
+                    <a href="/who-we-are">Who we are</a>
                   </li>
                   <Separator />
                   <li
@@ -207,7 +207,10 @@ export default function NavBar() {
                   <Separator />
                   <li
                     className="py-2 px-3 text-gray-800 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => setIsHovered2(false)}
+                    onClick={() => {
+                      setIsHovered2(false);
+                      router.push("/contact");
+                    }}
                   >
                     Contact us
                   </li>
@@ -311,10 +314,10 @@ export default function NavBar() {
           <Link href="/">
             <p className="px-10">Our team</p>{" "}
           </Link>
-          <Link href="/">
+          <Link href="/who-we-are">
             <p className="px-10">Who we are</p>{" "}
           </Link>
-          <Link href="/">
+          <Link href="/document">
             <p className="px-10">Document</p>{" "}
           </Link>
           <Separator />
@@ -323,13 +326,13 @@ export default function NavBar() {
             Get involved
           </p>
 
-          <Link href="/">
+          <Link href="#getupdate">
             <p className="px-10 ">Get update</p>{" "}
           </Link>
-          <Link href="/">
+          <Link href="/contact">
             <p className="px-10">Contact us</p>{" "}
           </Link>
-          <Link href="/">
+          <Link href="/blog">
             <p className="px-10">Blog</p>{" "}
           </Link>
         </div>

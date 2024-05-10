@@ -105,7 +105,10 @@ export default function Footer() {
             <Link href="/" className="text-sm hover:text-yellow-700 ">
               Home
             </Link>
-            <Link href="/" className="text-sm hover:text-yellow-700  ml-4">
+            <Link
+              href="/contact"
+              className="text-sm hover:text-yellow-700  ml-4"
+            >
               Contact us
             </Link>
             <Link

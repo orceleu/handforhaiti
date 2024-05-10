@@ -28,11 +28,11 @@ export default function HaitianStory() {
         <>
           <p>
             &quot;mwen se yon komèsan,mwen gen 3 timoun ,chak jou mwen leve a 4
-            h di maten poum al chache lavi pou m bay pitit mwen yo manje. anpil
-            fwa yo konn al lekòl jis ak yon vè dlo nan vant .edid klasik mwen
-            kanpe nan segondè akòz paranm pat gen ase moyen ekonomik ,men map fè
-            tout efò m pou piti mwen yo fini etid klasik yo epi al nan inivèsite
-            pou yo ka gen yon avni miyò .&quot;
+            è di maten poum al chache lavi pou m bay pitit mwen yo manje. anpil
+            fwa yo konn al lekòl jis ak yon vè dlo nan vant .etid klasik mwen
+            kanpe nan segondè akòz paran m pat gen ase mwayen ekonomik ,men map
+            fè tout efò m pou pitit mwen yo fini etid klasik yo epi al nan
+            inivèsite pou yo ka gen yon avni miyò .&quot;
           </p>
         </>
       )}
