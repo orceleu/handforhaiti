@@ -6,6 +6,7 @@ export async function POST(request: NextRequest) {
 
   const transport = nodemailer.createTransport({
     service: "gmail",
+
     /* 
         setting service as 'gmail' is same as providing these setings:
   
@@ -30,8 +31,8 @@ export async function POST(request: NextRequest) {
     text: message,
   };
 
-  const sendMailPromise = () =>
-    new Promise<string>((resolve, reject) => {
+  const sendMailPromise = async () =>
+    await new Promise<string>((resolve, reject) => {
       transport.sendMail(mailOptions, function (err) {
         if (!err) {
           resolve("Thanks for submitting");
