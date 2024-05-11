@@ -52,10 +52,11 @@ export default function page() {
           pockets. This is possible because we are a small club without
           hydraulic administration. There is no salary for volunteers. Our goal:
           to make young people independent of external aid so that they can
-          later stand on their own feet and have a future perspective. We don't
-          just help in case of disaster. We create sustainable long-term
-          prospects for children and young people. This way, we prevent refugee
-          movements. Helping in the country makes much more sense!
+          later stand on their own feet and have a future perspective. We
+          don&apos;t just help in case of disaster. We create sustainable
+          long-term prospects for children and young people. This way, we
+          prevent refugee movements. Helping in the country makes much more
+          sense!
         </p>
         <p className="underline my-1">
           Our Impact Thanks to the generous support of our donors, partners, and
