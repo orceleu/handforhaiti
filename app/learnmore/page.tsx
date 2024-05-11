@@ -7,6 +7,7 @@ import Footer from "../component/Footer";
 import { BsBack } from "react-icons/bs";
 import { GiReturnArrow } from "react-icons/gi";
 import { IoReturnDownBack } from "react-icons/io5";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -32,7 +33,14 @@ export default function page() {
         </div>
         <p>filling an empty stomach would cost $5.</p>
         <br />
-        <Button variant="secondary">Donate</Button>
+        <Link
+          href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
+          target="_blank"
+        >
+          <Button variant="secondary">Donate</Button>
+        </Link>
+
+        <br />
         <br />
         <p>Chair</p>
         <div className="flex items-center space-x-2">
@@ -46,7 +54,13 @@ export default function page() {
         </div>
         <p>Donate a chair for $10.</p>
         <br />
-        <Button variant="secondary">Donate</Button>
+        <Link
+          href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
+          target="_blank"
+        >
+          <Button variant="secondary">Donate</Button>
+        </Link>
+        <br />
         <br />
         <p>Uniform</p>
         <div className="flex items-center space-x-2">
@@ -63,7 +77,15 @@ export default function page() {
         </div>
         <p>Donate a uniform for $25.</p>
         <br />
-        <Button variant="secondary">Donate</Button>
+
+        <Link
+          href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
+          target="_blank"
+        >
+          <Button variant="secondary">Donate</Button>
+        </Link>
+
+        <br />
         <br />
         <p> educational materials</p>
         <div className="flex items-center space-x-2">
@@ -78,7 +100,13 @@ export default function page() {
         </div>
         <p>Make a donation of educational materials for $30.</p>
         <br />
-        <Button variant="secondary">Donate</Button>
+        <Link
+          href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
+          target="_blank"
+        >
+          <Button variant="secondary">Donate</Button>
+        </Link>
+        <br />
         <br />
         <p>survival kit</p>
         <div className="flex items-center space-x-2">
@@ -103,8 +131,14 @@ export default function page() {
           </div>
         </div>
         <p>Donate a survival kit for $30.</p>
-        <Button variant="secondary">Donate</Button>
-
+        <Link
+          href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
+          target="_blank"
+        >
+          <Button variant="secondary">Donate</Button>
+        </Link>
+        <br />
+        <br />
         <p>medical package </p>
         <div className="flex items-center space-x-2">
           <Image src={img1} alt="" className="size-[100px]" />

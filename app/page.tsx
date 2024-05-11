@@ -19,6 +19,32 @@ import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import HaitianStory from "./component/HaitianStory";
 export default function Home() {
+  /*
+   <div className="mt-[50px] mx-auto">
+          <div className="flex justify-center">
+            <p className="text-center font-semibold">Our main sponsors</p>
+          </div>
+          <div className="flex justify-center">
+            <div className="flex items-center space-x-3">
+              <div>
+                <Image
+                  src={logohkot}
+                  alt="haitianknowledgeoftech"
+                  className="size-10 md:size-[100px]"
+                />
+                <p className="text-[6px] md:text-[12px] text-center text-gray-300">
+                  haitianknowledgeoftech.tech
+                </p>
+              </div>
+              <Image
+                src={logopihighservice}
+                alt="pihighservice"
+                className="size-10 md:size-[100px]"
+              />
+            </div>
+          </div>
+        </div>
+  */
   return (
     <main className="lg:p-10">
       <Head>
@@ -94,30 +120,7 @@ export default function Home() {
             <br />
           </div>
         </div>
-        <div className="mt-[50px] mx-auto">
-          <div className="flex justify-center">
-            <p className="text-center font-semibold">Our main sponsors</p>
-          </div>
-          <div className="flex justify-center">
-            <div className="flex items-center space-x-3">
-              <div>
-                <Image
-                  src={logohkot}
-                  alt="haitianknowledgeoftech"
-                  className="size-10 md:size-[100px]"
-                />
-                <p className="text-[6px] md:text-[12px] text-center text-gray-300">
-                  haitianknowledgeoftech.tech
-                </p>
-              </div>
-              <Image
-                src={logopihighservice}
-                alt="pihighservice"
-                className="size-10 md:size-[100px]"
-              />
-            </div>
-          </div>
-        </div>
+
         <br />
         <br />
         <br />

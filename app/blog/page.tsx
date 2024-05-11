@@ -11,12 +11,12 @@ export default function page() {
       <p className="text-2xl text-center my-10">Related topics</p>
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-10">
-        <a href="/blog/topic1">
+        <a href="/blog/">
           <p className="underline text-blue-700 hover:text-blue-800">
             How many gangs there are in haiti?
           </p>
         </a>
-        <a href="/blog/topic1">
+        <a href="/blog/">
           <p className="underline text-blue-700 hover:text-blue-800">
             Who is Jimmy cherizier?
           </p>
@@ -26,16 +26,16 @@ export default function page() {
           How people live in Haiti?
         </p>
         <p className="underline   text-blue-700 hover:text-blue-800">
-          Why Haiti facing this situation & how cope with that?
+          Why is Haiti facing such situations?{" "}
         </p>
         <p className="underline   text-blue-700 hover:text-blue-800">
-          Humanitarian program/biden{" "}
+          Humanitarian program/biden
         </p>
         <p className="underline  text-blue-700 hover:text-blue-800">
-          does Haiti is really poor country?
+          Is Haiti really a poor country?{" "}
         </p>
         <p className="underline  text-blue-700 hover:text-blue-800">
-          ou est letat haitien,que fais son gouvernement?
+          Where is the Haitian state, what is its government doing?{" "}
         </p>
       </div>
       <div className="h-3 bg-gray-700 my-16"></div>

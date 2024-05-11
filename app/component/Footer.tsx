@@ -7,7 +7,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
-import img9 from "../../public/img9.jpg";
+import img9 from "../../public/logodonation.png";
 
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";

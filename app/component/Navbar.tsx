@@ -36,8 +36,8 @@ export default function NavBar() {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="bg-white w-full  p-4  left-0 right-0 z-50 shadow-sm">
-      <nav className="container px-1 md:px-6 mx-auto flex items-center justify-between">
+    <header className="fixed top bg-white w-full  p-4  left-0 right-0 z-50 shadow-sm">
+      <nav className=" container px-1 md:px-6 mx-auto flex items-center justify-between">
         <div className="flex items-center ">
           <Image
             width={60}
