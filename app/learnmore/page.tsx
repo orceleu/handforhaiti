@@ -1,13 +1,19 @@
 import React from "react";
 import NavBar from "../component/Navbar";
 import Image from "next/image";
-import img1 from "../../public/img88.jpg";
+import img1 from "../../public/separationplat3.jpg";
+import img6 from "../../public/fooddistribution2.jpg";
+import img2 from "../../public/realchair2.jpg";
+import img5 from "../../public/schoolfuniture2.jpg";
+import img3 from "../../public/uniform.jpg";
+import img7 from "../../public/santepackage.jpg";
 import { Button } from "@/components/ui/button";
 import Footer from "../component/Footer";
 import { BsBack } from "react-icons/bs";
 import { GiReturnArrow } from "react-icons/gi";
 import { IoReturnDownBack } from "react-icons/io5";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 
 export default function page() {
   return (
@@ -22,7 +28,7 @@ export default function page() {
         <p className="text-3xl font-semibold my-10">
           Here is a selection of in-kind donations.
         </p>
-        <p>Hot meal</p>
+        <p className="font-semibold">Hot meal</p>
         <div className="flex items-center space-x-2">
           <Image src={img1} alt="" className="size-[100px]" />
           <p className="my-10 mx-2">
@@ -41,10 +47,11 @@ export default function page() {
         </Link>
 
         <br />
+        <Separator className="my-4" />
         <br />
-        <p>Chair</p>
+        <p className="font-semibold">Chair</p>
         <div className="flex items-center space-x-2">
-          <Image src={img1} alt="" className="size-[100px]" />
+          <Image src={img2} alt="" className="size-[100px]" />
           <p className="my-10 mx-2">
             There are enough poor schools in Haiti. We are following the path of
             a globally recognized and sustainable Montessori education. Here,
@@ -61,10 +68,12 @@ export default function page() {
           <Button variant="secondary">Donate</Button>
         </Link>
         <br />
+        <Separator className="my-4" />
+
         <br />
-        <p>Uniform</p>
+        <p className="font-semibold">Uniform</p>
         <div className="flex items-center space-x-2">
-          <Image src={img1} alt="" className="size-[100px]" />
+          <Image src={img3} alt="" className="size-[100px]" />
           <p className="my-10 mx-2">
             The mandatory school uniform prevents many parents from sending
             their children to school. They simply cannot afford to buy uniforms
@@ -77,7 +86,6 @@ export default function page() {
         </div>
         <p>Donate a uniform for $25.</p>
         <br />
-
         <Link
           href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
           target="_blank"
@@ -86,10 +94,12 @@ export default function page() {
         </Link>
 
         <br />
+        <Separator className="my-4" />
+
         <br />
-        <p> educational materials</p>
+        <p className="font-semibold"> educational materials</p>
         <div className="flex items-center space-x-2">
-          <Image src={img1} alt="" className="size-[100px]" />
+          <Image src={img5} alt="" className="size-[100px]" />
           <p className="my-10 mx-2">
             Books, pens, and notebooks are simply part of it. You can provide a
             child with the &apos;Annual Material Package.&apos; Our educational
@@ -107,10 +117,12 @@ export default function page() {
           <Button variant="secondary">Donate</Button>
         </Link>
         <br />
+        <Separator className="my-4" />
+
         <br />
-        <p>survival kit</p>
+        <p className="font-semibold">survival kit</p>
         <div className="flex items-center space-x-2">
-          <Image src={img1} alt="" className="size-[100px]" />
+          <Image src={img6} alt="" className="size-[100px]" />
           <div>
             <p className="my-1 mx-2">
               We help the poorest families in the region to live a dignified
@@ -131,6 +143,7 @@ export default function page() {
           </div>
         </div>
         <p>Donate a survival kit for $30.</p>
+        <br />
         <Link
           href="https://www.paypal.com/donate/?hosted_button_id=UW6KVE5SQGQ98"
           target="_blank"
@@ -138,10 +151,12 @@ export default function page() {
           <Button variant="secondary">Donate</Button>
         </Link>
         <br />
+        <Separator className="my-4" />
+
         <br />
-        <p>medical package </p>
+        <p className="font-semibold">medical package </p>
         <div className="flex items-center space-x-2">
-          <Image src={img1} alt="" className="size-[100px]" />
+          <Image src={img7} alt="" className="size-[100px]" />
           <div>
             <p className="my-1 mx-2">
               Poor children attending our school are in poor health, not only

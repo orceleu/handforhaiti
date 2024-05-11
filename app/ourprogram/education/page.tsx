@@ -1,9 +1,9 @@
 import Footer from "@/app/component/Footer";
 import NavBar from "@/app/component/Navbar";
 import React from "react";
-import trainprof from "../../../public/educationprof.jpg";
-import educationchildren from "../../../public/educationchildren.jpg";
-import schoolstuff from "../../../public/educationstuff.jpg";
+import trainprof from "../../../public/profaccompagnement.jpg";
+import educationchildren from "../../../public/topchildren.jpg";
+import schoolstuff from "../../../public/schoolfuniture.jpg";
 
 import Image from "next/image";
 

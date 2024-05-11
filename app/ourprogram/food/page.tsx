@@ -4,8 +4,9 @@ import NavBar from "@/app/component/Navbar";
 import groupchildren from "../../../public/childrensss.jpg";
 import carryrice from "../../../public/duriz.jpg";
 import eating from "../../../public/eating.jpg";
-import kits from "../../../public/fooddistribution.jpg";
+import kits from "../../../public/separationplat2.jpg";
 import foodeating from "../../../public/foofchildeating.jpg";
+import kits1 from "../../../public/fooddistribution.jpg";
 
 import Image from "next/image";
 
@@ -38,6 +39,9 @@ export default function page() {
       </div>
       <div className="flex justify-center p-10">
         <Image src={kits} alt="education" />
+      </div>
+      <div className="flex justify-center p-10">
+        <Image src={kits1} alt="education" />
       </div>
       <div className="h-3 bg-gray-700 my-16"></div>
       <Footer />

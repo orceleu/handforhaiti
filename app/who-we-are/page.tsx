@@ -18,7 +18,7 @@ export default function page() {
           HandforHaiti, an organization dedicated to providing the necessary
           assistance and support to those most in need in Haiti. Our mission is
           rooted in the desire to create a positive and sustainable impact in
-          the most vulnerable communities in our country. Our Commitment We
+          the most vulnerable communities in our country. Our Commitment: We
           believe in the power of solidarity and collective action to transform
           lives and build a better future. Since our inception, we have been
           committed to:
@@ -45,7 +45,7 @@ export default function page() {
         </p>
         <p className="my-3 ">
           The founders of the small association have been involved with Haiti
-          since 2016. Barbara and Michael Kaasch have been privately assisting
+          since 2016. Barbara and Philippe Moreau have been privately assisting
           since 2016. HandforHaiti has officially existed since 2016 and is
           built on many years of volunteer experience in the country! We can be
           proud of this! We cover administrative costs privately, out of our own
@@ -58,8 +58,9 @@ export default function page() {
           prevent refugee movements. Helping in the country makes much more
           sense!
         </p>
+        <p className="font-semibold my-2">Our Impact:</p>
         <p className="underline my-1">
-          Our Impact Thanks to the generous support of our donors, partners, and
+          Thanks to the generous support of our donors, partners, and
           volunteers, we have been able to make significant progress in the
           fight against poverty, injustice, and inequality in Haiti.
         </p>

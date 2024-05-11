@@ -98,8 +98,7 @@ export default function Footer() {
         </div>
         <footer className="flex flex-col lg:flex-row justify-between items-center">
           <p className="text-sm text-gray-500 lg:order-2 md:max-w-[300px]">
-            &copy; Hand for Haiti is a 501c3 non-profit charity, with federal
-            EIN number 26-0498705 . © Hand for Haiti 2021 | Donor Privacy Policy
+            &copy; Hand for Haiti 2021 | Donor Privacy Policy
           </p>
           <div className="flex lg:order-1 lg:justify-center lg:mt-0 mt-4">
             <Link href="/" className="text-sm hover:text-yellow-700 ">
@@ -121,8 +120,8 @@ export default function Footer() {
         </footer>
       </div>
       <div className="my-16">
-        <div className="flex justify-center items-center mt-5">
-          <div className="flex">
+        <div className="flex justify-center  mt-5">
+          <div className="flex space-x-4">
             <Link
               href="https://www.facebook.com/profile.php?id=100085541012699"
               target="_blank"
@@ -130,10 +129,7 @@ export default function Footer() {
               <FaFacebook className="w-10 h-10" />
             </Link>
             <Link href="https://www.instagram.com" target="_blank">
-              <FaInstagram className="w-10 h-10 mx-10" />
-            </Link>
-            <Link href="https://www.x.com" target="_blank">
-              <BsTwitterX className="w-10 h-10" />
+              <FaInstagram className="w-10 h-10 " />
             </Link>
           </div>
         </div>

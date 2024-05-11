@@ -1,5 +1,6 @@
 import Image from "next/image";
 import haitihelp1 from "../public/childsimgdonation.jpg";
+
 import img8 from "../public/img88.jpg";
 import img9 from "../public/img9.jpg";
 import duri from "../public/durizpired2.jpg";
@@ -47,23 +48,17 @@ export default function Home() {
   */
   return (
     <main className="lg:p-10">
-      <Head>
-        <title>Hand for Haiti</title>
-        <meta
-          name="description"
-          content=" Lorem ipsum dolor sit amet consectetur adipisicing elit."
-          key="desc"
-        />
-      </Head>
       <NavBar />
       <div className="bg-yellow-100  p-5">
         <br />
         <br />
         <br />
         <br />
+        <br />
+        <br />
         <p className="text-center font-extralight text-2xl md:text-4xl ">
-          Our Long-Term Response Plan to Support Economic, Social, and
-          Humanitarian Relief in Haiti
+          Our Enduring Commitment to Foster Economic,Social,and Humanitarian
+          Support for Haiti
         </p>
         <a href="/learnmore">
           <div className=" flex items-center sm:mt-10">
@@ -99,7 +94,7 @@ export default function Home() {
             </p>
           </div>
           <div className="bg-blue-100 w-[300px] mx-auto ">
-            <p className="text-4xl font-bold text-center mt-10">1100+</p>
+            <p className="text-4xl font-bold text-center mt-10">3100+</p>
             <p className="mt-10 text-center">BENEFICIARIES</p>
             <p className="mt-10 text-center px-3">
               I&apos;m making a donation to increase the number of

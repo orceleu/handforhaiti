@@ -1,50 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
-import Mail from "nodemailer/lib/mailer";
+import { Resend } from "resend";
+import { EmailTemplate } from "../component/Email-template";
+const resend = new Resend("re_CnDmrKKW_AM5h7Mh1iB1AbAEJrXqqH9FK");
 export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json();
 
-  const transport = nodemailer.createTransport({
-    service: "gmail",
-    secure: false,
-
-    /* 
-        setting service as 'gmail' is same as providing these setings:
-  
-        host: "smtp.gmail.com",
-        port: 465,
-        secure: true
-        
-        If you want to use a different email provider other than gmail, you need to provide these manually.
-        Or you can go use these well known services and their settings at
-        https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json
-    */
-    auth: {
-      user: "handforhaiti7@gmail.com",
-      pass: "gpnt xopm eiaa oqcv",
-    },
-  });
-  const mailOptions: Mail.Options = {
-    from: email,
-    to: "handforhaiti7@gmail.com",
-    //cc: email, //(uncomment this line if you want to send a copy to the sender)
-    subject: `Message from ${name} (${email})`,
-    text: message,
-  };
-
-  const sendMailPromise = async () =>
-    await transport.sendMail(mailOptions, function (err) {
-      if (!err) {
-        console.log("Thanks for submitting");
-      } else {
-        console.log(err.message);
-      }
+  try {
+    const data = await resend.emails.send({
+      from: "Acme <onboarding@resend.dev>",
+      to: ["handforhaiti7@gmail.com"],
+      subject: `${message}  `,
+      react: EmailTemplate({
+        firstName: `${name}, ${email}`,
+      }) as React.ReactElement,
     });
 
-  try {
-    sendMailPromise();
-    return NextResponse.json({ message: "Thanks for submitting" });
-  } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 });
+    return Response.json({ message: "Thanks for submitting!" });
+  } catch (error) {
+    return Response.json({ error });
   }
 }
